@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme, StyledPage, Inner } from './styles/PageStyles';
 import Header from './Header';
 import Meta from './Meta';
+
 class Page extends Component {
 	render() {
 		return (
