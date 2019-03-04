@@ -1,6 +1,20 @@
 import Nav from './Nav';
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import { StyledHeader, Logo } from './styles/HeaderStyles';
+
+Router.onRouteChangeStart = () => {
+	NProgress.start();
+}
+
+Router.onRouteChangeComplete = () => {
+	NProgress.done();
+}
+
+Router.onRouteChangeError = () => {
+	NProgress.done();
+}
 
 const Header = () => {
 	return (
