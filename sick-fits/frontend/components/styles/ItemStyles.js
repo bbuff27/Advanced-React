@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Item = styled.div`
+export const ItemStyles = styled.div`
   background: white;
   border: 1px solid ${props => props.theme.offWhite};
   box-shadow: ${props => props.theme.bs};
@@ -36,4 +36,14 @@ const Item = styled.div`
   }
 `;
 
-export default Item;
+export const Center = styled.div`
+  text-align: center;
+`;
+
+export const ItemsList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  max-width: ${props => props.theme.maxWidth};
+  margin: 0 auto;
+`;
